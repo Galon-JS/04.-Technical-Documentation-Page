@@ -1,0 +1,77 @@
+html, body {
+    background-image: url(/img/pngtree-playstation-neon-sign-pattern-background-picture-image_1470915.jpg);
+    font-family: Verdana, sans-serif !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    min-width: 290px;
+}
+#left-navbar {
+    position: fixed;
+    background-color: wheat;
+    min-width: 290px;
+    top: 1;
+    left: 1;
+    height: 100%;
+    border-right: solid 10px rgba(14, 8, 77, 0.4);
+}
+header {
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+.main-section header {
+    text-align: left;
+    margin: 0px;
+}
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#navbar li {
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#right-main {
+    position: absolute;
+    margin-left: 310px;
+    background-color: wheat;
+    padding: 20px;
+    top: 1;
+    left: 1;
+    margin-bottom: 110px;
+}
+/* <!---[-[-[-[-[     For MOBILE PHONES     ]-]-]-]-]---> */
+@media (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+    #navbar {
+        position: absolute;
+        top: 1;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        min-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+    #right-main {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
