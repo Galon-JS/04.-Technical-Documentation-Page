@@ -1,77 +1,136 @@
-html, body {
-    background-image: url(/img/pngtree-playstation-neon-sign-pattern-background-picture-image_1470915.jpg);
-    font-family: Verdana, sans-serif !important;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    min-width: 290px;
+html,
+body {
+  min-width: 290px;
+  color: var(--bs-white);
+  background-color: var(--bs-blue);
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.2;
 }
-#left-navbar {
-    position: fixed;
-    background-color: wheat;
-    min-width: 290px;
-    top: 1;
-    left: 1;
-    height: 100%;
-    border-right: solid 10px rgba(14, 8, 77, 0.4);
+#navbar {
+  position: fixed;
+  min-width: 280px;
+  top: 10px;
+  left: 10px;
+  width: 290px;
+  height: 95%;
+  border-right: 1px solid white;
 }
 header {
-    margin: 10px;
-    text-align: center;
-    font-size: 1.8em;
-    font-weight: thin;
+  color: var(--bs-white);
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
 }
-.main-section header {
-    text-align: left;
-    margin: 0px;
+#navbar header {
+  border-bottom: 1px solid white;
+  font-size: 1.6em;
+}
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+  padding: 1px 20px;
+  border-radius: .25em;
+  background-color: var(--bs-info);
+
 }
 #navbar ul {
-    height: 88%;
-    padding: 0;
-    overflow-y: auto;
-    overflow-x: hidden;
+  height: 90%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.second-ul {
+  margin-left: 15px;
 }
 #navbar li {
-    border-top: 1px solid;
-    list-style: none;
-    position: relative;
-    width: 100%;
+  color: var(--bs-white);
+  list-style: none;
+  position: relative;
 }
 #navbar a {
-    display: block;
-    padding: 10px 30px;
-    text-decoration: none;
-    cursor: pointer;
+  display: block;
+  padding: 5px 30px;
+  color: var(--bs-white);
+  text-decoration: none;
+  cursor: pointer;
+    background-color: var(--bs-info);
+    border-radius: .25em;
+    margin-bottom: 3px;
 }
-#right-main {
-    position: absolute;
-    margin-left: 310px;
-    background-color: wheat;
-    padding: 20px;
-    top: 1;
-    left: 1;
-    margin-bottom: 110px;
+#navbar a:hover {
+    background-color: var(--bs-gray-600);
 }
-/* <!---[-[-[-[-[     For MOBILE PHONES     ]-]-]-]-]---> */
-@media (max-width: 815px) {
-    #navbar ul {
-        border: 1px solid;
-        height: 207px;
-    }
-    #navbar {
-        position: absolute;
-        top: 1;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        min-height: 275px;
-        border: none;
-        z-index: 1;
-        border-bottom: 2px solid;
-    }
-    #right-main {
-        position: relative;
-        margin-left: 0px;
-        margin-top: 270px;
-    }
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+  background-color: var(--bs-blue);
+}
+
+section article {
+  color: var(--bs-white);
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 97%;
+    max-height: 275px;
+    z-index: 1;
+    background-color: var(--bs-blue);
+    border-bottom: 5px solid var(--bs-info);
+    border-right: none;
+  }
+  #navbar ul {
+    max-height: 207px;
+  }
+  #navbar a {
+    padding: 3px 30px;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 320px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
 }
