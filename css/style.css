@@ -12,8 +12,9 @@ body {
   top: 10px;
   left: 10px;
   width: 300px;
-  height: 95%;
+  height: 100%;
   border-right: 1px solid white;
+  background-color: var(--bs-blue);
 }
 header {
   color: var(--bs-white);
@@ -66,6 +67,9 @@ header {
   padding: 20px;
   margin-bottom: 110px;
   background-color: var(--bs-blue);
+  top: 10px;
+  right: 10px;
+  left: 0;
 }
 section article {
   color: var(--bs-white);
@@ -88,11 +92,12 @@ code {
   margin: 10px;
   border-radius: 5px;
 }
-#References a {
+.main-section a {
   color: var(--bs-white);
   text-decoration: underline;
+  margin-left: 30px;
 }
-#References a:hover {
+.main-section a:hover {
   color: var(--bs-red);
 }
 article header {
@@ -140,6 +145,8 @@ p {
     position: relative;
     margin-left: 0px;
     margin-top: 270px;
+    top: 0;
+    
   }
 }
 @media only screen and (max-width: 400px) {
