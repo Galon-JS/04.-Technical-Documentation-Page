@@ -8,10 +8,10 @@ body {
 }
 #navbar {
   position: fixed;
-  min-width: 280px;
+  min-width: 290px;
   top: 10px;
   left: 10px;
-  width: 290px;
+  width: 300px;
   height: 95%;
   border-right: 1px solid white;
 }
@@ -32,7 +32,6 @@ header {
   padding: 1px 20px;
   border-radius: .25em;
   background-color: var(--bs-info);
-
 }
 #navbar ul {
   height: 90%;
@@ -68,35 +67,59 @@ header {
   margin-bottom: 110px;
   background-color: var(--bs-blue);
 }
-
 section article {
   color: var(--bs-white);
   margin: 15px;
   font-size: 0.96em;
 }
-
 section li {
   margin: 15px 0px 0px 20px;
 }
-
 code {
   display: block;
-  text-align: left;
+  text-align: center;
   white-space: pre-line;
   position: relative;
   word-break: normal;
   word-wrap: normal;
-  line-height: 2;
-  background-color: #f7f7f7;
+  line-height: 1.5;
+  background-color: var(--bs-gray-300);
   padding: 15px;
   margin: 10px;
   border-radius: 5px;
 }
-
+#References a {
+  color: var(--bs-white);
+  text-decoration: underline;
+}
+#References a:hover {
+  color: var(--bs-red);
+}
+article header {
+  font-size: 1.4em !important;
+  padding: 0 10px !important;
+  margin-bottom: 10px !important;
+}
+.card {
+  width: 50%;
+}
+p {
+  text-align: justify;
+  line-height: 1.4;
+  color: var(--bs-white);
+}
+.main-section .card {
+  margin: auto;
+}
+.main-section ul {
+  color: var(--bs-white);
+  font-size: .8em;
+  line-height: 1;
+}
+/* <!---[-[-[-[-[      for MOBILE PHONE     ]-]-]-]-]---> */
 @media only screen and (max-width: 815px) {
-  /* For mobile phones: */
   #navbar {
-    position: fixed;
+    position: absolute;
     top: 0;
     padding: 0;
     margin: 0;
@@ -104,7 +127,7 @@ code {
     max-height: 275px;
     z-index: 1;
     background-color: var(--bs-blue);
-    border-bottom: 5px solid var(--bs-info);
+    border-bottom: 1px solid var(--bs-white);
     border-right: none;
   }
   #navbar ul {
@@ -116,18 +139,15 @@ code {
   #main-doc {
     position: relative;
     margin-left: 0px;
-    margin-top: 320px;
+    margin-top: 270px;
   }
 }
-
 @media only screen and (max-width: 400px) {
   #main-doc {
     margin-left: -10px;
   }
-
   code {
     margin-left: -20px;
-    width: 100%;
     padding: 15px;
     padding-left: 10px;
     padding-right: 45px;
